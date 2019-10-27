@@ -53,7 +53,7 @@
 				<version>1.7.0</version>
 				<configuration>
 					<to>
-						 <image>docker.io/mvamax/spring-jib</image>
+						 <image>docker.io/mvamax/spring-jib:v2</image>
 						  <auth>
     				 		<username>mvamax</username>
       						<password></password>
