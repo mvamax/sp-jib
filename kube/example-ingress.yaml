@@ -9,7 +9,7 @@ spec:
   - host: api.gateway
     http:
       paths:
-      - path: /v1/*
+      - path: /
         backend:
           serviceName: spring-jibv1
           servicePort: 8080

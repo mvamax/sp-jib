@@ -1,0 +1,25 @@
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: "2019-10-27T09:11:01Z"
+  labels:
+    app: spring-jibv1
+  name: spring-jibv1
+  namespace: default
+  resourceVersion: "19295"
+  selfLink: /api/v1/namespaces/default/services/spring-jibv1
+  uid: 51b66a7b-d240-4645-8d3b-c3c7e8a789e9
+spec:
+  clusterIP: 10.107.248.24
+  externalTrafficPolicy: Cluster
+  ports:
+  - nodePort: 31279
+    port: 8080
+    protocol: TCP
+    targetPort: 8080
+  selector:
+    app: spring-jibv1
+  sessionAffinity: None
+  type: NodePort
+status:
+  loadBalancer: {}
