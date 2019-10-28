@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: spring-jibv2
+  labels:
+    app: spring-jibv2
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: spring-jibv2
+  template:
+    metadata:
+      labels:
+        app: nspring-jibv2
+    spec:
+      containers:
+      - name: spring-jibv2
+        image: docker.io/mvamax/spring-jib:v1
+        ports:
+        - containerPort: 8080
